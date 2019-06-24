@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate,
 UINavigationControllerDelegate {
+    
     // Connect outlet for dispositionView
     @IBOutlet weak var dispositionView: DispositionView!
     // Connect outlets for buttons
@@ -23,7 +24,7 @@ UINavigationControllerDelegate {
     
     // Properties
     let pickerController = UIImagePickerController()
-    var selectedImage:  UIImageView?
+    var selectedImage :  UIImageView?
     var screenshot : UIImage?
     
     // Method for swipeGesture when device is rotated

@@ -19,7 +19,6 @@ class DispositionView: UIView {
     enum Style {
         case layoutOne, layoutTwo, layoutThree
     }
-    
     var style: Style = .layoutThree {
         didSet {
             setStyle(_style: style)
@@ -48,6 +47,7 @@ class DispositionView: UIView {
             rightBottom.isHidden = false
         }
     }
+    
     // Configuration layouts when it's selected
     // * Outlets for the layouts
     @IBOutlet weak var layout1: UIButton!
@@ -57,6 +57,7 @@ class DispositionView: UIView {
     @IBOutlet weak var selected1: UIImageView!
     @IBOutlet weak var selected2: UIImageView!
     @IBOutlet weak var selected3: UIImageView!
+    
     // *** Method to arrange the first layout when it's selected
     @IBAction func choiceLayout1(_ sender: UIButton) {
         layout1.isSelected = true
@@ -81,7 +82,6 @@ class DispositionView: UIView {
         selected3.isHidden = false
         style = .layoutThree
     }
-    
 }
 
 
